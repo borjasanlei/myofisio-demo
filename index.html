@@ -10,21 +10,22 @@
   <meta name="theme-color" content="#191b19">
   <title>MYO Madrid · Salud en movimiento</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/centro.webp" type="image/webp">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="header wrap">
     <a class="brand" href="#inicio" aria-label="MYO Madrid, inicio">
-      <span class="wordmark">MYO<span aria-hidden="true">.</span></span>
+      <img class="brand-logo" src="assets/logo-myo.svg" width="292" height="119" alt="MYO Madrid">
       <span class="brand-caption">Salud en<br>movimiento</span>
     </a>
     <nav aria-label="Navegación principal">
       <a href="#servicios">Disciplinas</a>
       <a href="#centro">El centro</a>
-      <a href="#dudas">Dudas</a>
+      <a href="#consulta">Reservar</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-    <a class="button button-outline header-cta" href="https://www.myofismadrid.com/contacto/">Pedir cita <span aria-hidden="true">↗</span></a>
+    <a class="button button-outline header-cta" href="#consulta">Pedir cita <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="contenido" tabindex="-1">
@@ -35,7 +36,7 @@
         <p class="intro">Tu salud no va por partes. Fisioterapia, entrenamiento,
           nutrición y psicología en un mismo espacio.</p>
         <div class="hero-actions">
-          <a class="button button-gold" href="https://www.myofismadrid.com/contacto/">Pedir cita <span aria-hidden="true">↗</span></a>
+          <a class="button button-gold" href="#consulta">Pedir cita <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="#centro">Conoce el centro <span aria-hidden="true">↓</span></a>
         </div>
         <p class="hero-note">Cuidarte. Moverte. Volver a ti.</p>
@@ -111,7 +112,7 @@
             <li><h3>Acompañar el proceso</h3><p>Revisar la evolución y adaptar los siguientes pasos.</p></li>
           </ol>
           <p class="service-conditions">Consulta tarifas y duración con el centro.</p>
-          <a class="button button-dark" href="https://www.myofismadrid.com/contacto/">Pedir cita <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="https://backoffice.bsport.io/m/MYOFIS/4168/private-service/">Ver citas en bsport <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -135,35 +136,101 @@
     <section class="journey" id="consulta" aria-labelledby="journey-title">
       <div class="wrap">
         <div class="section-heading">
-          <div><p class="eyebrow">03 / Tu siguiente paso</p><h2 id="journey-title">Empieza por ti.<br><em>Nos vemos en MYO.</em></h2></div>
-          <p>Conoce las disciplinas, solicita tu cita y confirma los detalles con el centro.</p>
+          <div><p class="eyebrow">03 / Tu siguiente paso</p><h2 id="journey-title">Elige cómo empezar.<br><em>Nos vemos en MYO.</em></h2></div>
+          <div class="booking-intro"><p>Una consulta, tu próxima clase o un plan a tu medida.
+            Cada paso, por el canal que necesitas.</p>
+            <a class="text-link" href="#plataformas">¿Vienes con tu plataforma? <span aria-hidden="true">↓</span></a></div>
         </div>
-        <ol class="journey-steps">
-          <li><span class="index">01</span><h3>Encuentra tu disciplina</h3><p>Conoce las opciones y elige qué te gustaría trabajar.</p><a class="text-link" href="#servicios">Volver a disciplinas <span aria-hidden="true">↑</span></a></li>
-          <li><span class="index">02</span><h3>Solicita tu cita</h3><p>Utiliza el formulario de contacto de MYO para indicar qué necesitas.</p><a class="text-link" href="https://www.myofismadrid.com/contacto/">Pedir cita <span aria-hidden="true">↗</span></a></li>
-          <li><span class="index">03</span><h3>Confirma con el centro</h3><p>Consulta disponibilidad y acuerda los detalles de tu visita directamente con el equipo.</p><a class="text-link" href="#contacto">Contactar con MYO <span aria-hidden="true">↗</span></a></li>
-        </ol>
+        <div class="booking-grid">
+          <article class="booking-option" id="citas">
+            <span class="index">01 / Atención individual</span>
+            <h3>Una cita para ti</h3>
+            <p>Fisioterapia, entrenamiento personal, nutrición o psicología.
+              Consulta los servicios y horarios en bsport.</p>
+            <a class="text-link" href="https://backoffice.bsport.io/m/MYOFIS/4168/private-service/">Ver citas en bsport <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="booking-option" id="clases">
+            <span class="index">02 / Entrenamiento en grupo</span>
+            <h3>Tu próxima clase</h3>
+            <p>Consulta el calendario del centro y gestiona tu reserva desde bsport,
+              también si ya eres socio.</p>
+            <a class="text-link" href="https://backoffice.bsport.io/m/MYOFIS/4168/calendar/">Ver clases en bsport <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="booking-option" id="bonos">
+            <span class="index">03 / Bonos y cuotas</span>
+            <h3>Encuentra tu plan</h3>
+            <p>Consulta con el equipo los bonos, packs y cuotas que se ajustan
+              a tus objetivos y a tu ritmo.</p>
+            <a class="text-link" href="https://www.myofismadrid.com/contacto/">Consultar bonos y packs <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="booking-option" id="orientacion">
+            <span class="index">04 / Primera visita</span>
+            <h3>¿Por dónde empiezo?</h3>
+            <p>Cuéntanos qué necesitas. El equipo de MYO te orientará
+              para encontrar tu punto de partida.</p>
+            <a class="text-link" href="https://www.myofismadrid.com/contacto/">Contactar con el centro <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="booking-note">La reserva continúa en bsport. Para orientación y planes,
+          te llevamos al formulario de contacto del centro.</p>
       </div>
+    </section>
+
+    <section class="section wrap" id="plataformas" aria-labelledby="platforms-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Con tu plataforma</p><h2 id="platforms-title">Tu membresía.<br><em>Tu forma de moverte.</em></h2></div>
+        <p>Si vienes con Wellhub, Urban Sports Club o ClassPass,
+          consulta el acceso de tu plan y reserva en tu plataforma.</p>
+      </div>
+      <div class="partner-grid">
+        <article class="booking-option" id="wellhub">
+          <h3>Wellhub</h3>
+          <p>Antes Gympass. Comprueba las actividades incluidas en tu plan
+            y encuentra MYO Madrid en Wellhub.</p>
+          <a class="text-link" href="https://wellhub.com/es-es/search/partners/myo-madrid-chamartin/">Ver MYO en Wellhub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="booking-option" id="usc">
+          <h3>Urban Sports Club</h3>
+          <p>Consulta las clases de MYO y reserva desde la app
+            de Urban Sports Club.</p>
+          <a class="text-link" href="https://urbansportsclub.com/es/venues/myo-madrid">Ver MYO en USC <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="booking-option" id="classpass">
+          <h3>ClassPass</h3>
+          <p>Encuentra el centro y consulta las clases disponibles
+            para tu cuenta de ClassPass.</p>
+          <a class="text-link" href="https://classpass.com/studios/myo-madrid-clases-grupales">Ver MYO en ClassPass <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="booking-note">Las actividades, visitas y condiciones dependen de tu plataforma
+        y membresía. Comprueba la cobertura antes de reservar.</p>
     </section>
 
     <section class="section wrap faq" id="dudas" aria-labelledby="faq-title">
       <div><p class="eyebrow">Antes de empezar</p><h2 id="faq-title">Con las cosas<br><em>claras.</em></h2></div>
       <div class="faq-list">
         <details>
-          <summary>¿Cómo pido cita?</summary>
-          <p>Pulsa «Pedir cita» para abrir el formulario de contacto de MYO.
+          <summary>¿Cómo reservo una cita o una clase?</summary>
+          <p>Pulsa «Pedir cita» y elige entre una consulta individual, una clase
+            o atención del centro. Las reservas se gestionan en bsport; si vienes
+            con Wellhub, Urban Sports Club o ClassPass, utiliza tu plataforma.</p>
+        </details>
+        <details>
+          <summary>¿Y si no sé qué disciplina elegir?</summary>
+          <p>Contacta con el equipo de MYO para consultar cuál se ajusta a lo que necesitas.
             Enviar la solicitud no confirma una reserva: acuerda la disponibilidad
             y los detalles de tu visita con el centro.</p>
         </details>
         <details>
-          <summary>¿Y si no sé qué disciplina elegir?</summary>
-          <p>Conoce las cuatro disciplinas y contacta con el equipo de MYO para
-            consultar cuál se ajusta a lo que necesitas.</p>
+          <summary>¿Dónde consulto tarifas y disponibilidad?</summary>
+          <p>Consulta los horarios en bsport. Para bonos, packs, cuotas o dudas
+            sobre tarifas y duración, habla con el centro antes de confirmar.</p>
         </details>
         <details>
-          <summary>¿Dónde consulto tarifas y disponibilidad?</summary>
-          <p>Consulta con el centro las tarifas, la duración y los horarios
-            del servicio que te interesa antes de confirmar tu cita.</p>
+          <summary>¿Mi membresía incluye todos los servicios?</summary>
+          <p>No necesariamente. Las actividades incluidas y los límites de visitas
+            dependen de tu plataforma y plan. Comprueba sus condiciones y no
+            des por cubierta una consulta individual por tener acceso a clases.</p>
         </details>
       </div>
     </section>
@@ -171,20 +238,25 @@
     <section class="contact wrap" id="contacto" aria-labelledby="contact-title">
       <p class="eyebrow">Estamos para escucharte</p>
       <h2 id="contact-title">Hablemos de<br><em>tu próximo paso.</em></h2>
-      <p>Cuéntanos qué necesitas y consulta disponibilidad con el centro.</p>
-      <a class="button button-gold" href="https://www.myofismadrid.com/contacto/" aria-describedby="external-note">Pedir cita <span aria-hidden="true">↗</span></a>
-      <p class="external-note" id="external-note">Te llevamos al formulario de contacto de MYO para solicitar tu cita.</p>
+      <p>¿Prefieres hablar con el equipo? Cuéntanos qué necesitas y te orientamos.</p>
+      <a class="button button-gold" href="https://www.myofismadrid.com/contacto/" aria-describedby="external-note">Contactar con MYO <span aria-hidden="true">↗</span></a>
+      <p class="external-note" id="external-note">Te llevamos al formulario de contacto de MYO.</p>
+      <div class="contact-links" aria-label="Más formas de contactar">
+        <a class="text-link" href="https://wa.me/34614157151">WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="tel:+34614157151">Llamar al 614 157 151 <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="mailto:info@myofismadrid.com">Escribir un correo <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
   </main>
 
   <footer class="footer wrap" id="aviso">
-    <div class="footer-brand"><span class="wordmark">MYO<span aria-hidden="true">.</span></span><span>Salud en movimiento / Madrid</span></div>
+    <div class="footer-brand"><img class="brand-logo" src="assets/logo-myo.svg" width="292" height="119" alt="MYO Madrid"><span>Salud en movimiento / Madrid</span></div>
     <div class="footer-notice">
       <p>Fotografías de las instalaciones de MYO Madrid.</p>
       <p>Esta página no utiliza analítica, formularios ni cookies propias.
         GitHub, como alojamiento, puede registrar datos técnicos de acceso.
-        Las solicitudes de cita se gestionan en myofismadrid.com,
-        conforme a sus condiciones y política de privacidad.</p>
+        Las reservas y solicitudes se gestionan en los canales de MYO y las
+        plataformas enlazadas, conforme a sus condiciones y políticas de privacidad.</p>
     </div>
     <a class="text-link" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
   </footer>

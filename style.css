@@ -40,8 +40,7 @@ h3 { font-size: 1.65rem; letter-spacing: -.025em; }
 .header { min-height: 118px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 18px; text-decoration: none; }
 .brand:hover { text-decoration: none; }
-.wordmark { font-size: 2.85rem; font-weight: 800; line-height: 1; letter-spacing: -.09em; }
-.wordmark > span { color: var(--gold); }
+.brand-logo { width: 132px; height: auto; flex: none; }
 .brand-caption { border-left: 1px solid var(--line); padding-left: 18px; font-size: .59rem; text-transform: uppercase; line-height: 1.5; letter-spacing: .12em; }
 nav { display: flex; gap: 28px; }
 nav a { min-height: 44px; display: inline-flex; align-items: center; font-size: .82rem; text-decoration: none; }
@@ -94,11 +93,16 @@ h1 em { color: var(--gold); }
 .centre-photos figure:last-child { padding-top: 52px; }
 .centre-photos figcaption { margin-top: 14px; font-size: .8rem; color: var(--muted); }
 .journey { background: var(--surface); padding-block: 80px; }
-.journey-steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
-.journey-steps li { border-top: 1px solid var(--line); padding-top: 22px; }
-.journey-steps h3 { margin-top: 22px; font-size: 1.3rem; }
-.journey-steps p { margin-top: 16px; font-size: .9rem; color: var(--muted); }
-.journey-steps .text-link { margin-top: 14px; }
+.booking-intro { max-width: 350px; color: var(--muted); font-size: .93rem; }
+.booking-intro .text-link { margin-top: 10px; color: var(--gold); }
+.booking-grid, .partner-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.partner-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.booking-option { display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--line); }
+.booking-option .index { margin-bottom: 20px; }
+.booking-option h3 { font-size: 1.45rem; line-height: 1.2; }
+.booking-option p { max-width: 50ch; margin-block: 16px; color: var(--muted); font-size: .9rem; }
+.booking-option .text-link { margin-top: auto; justify-content: space-between; padding-block: 10px; line-height: 1.4; }
+.booking-note { margin-top: 24px; color: var(--muted); font-size: .78rem; }
 .faq { display: grid; grid-template-columns: 1fr 1.25fr; gap: 80px; }
 details { border-top: 1px solid var(--line); }
 details:last-child { border-bottom: 1px solid var(--line); }
@@ -110,6 +114,7 @@ details p { padding: 0 8px 24px; color: var(--muted); font-size: .9rem; }
 .contact > p:not(.eyebrow) { color: var(--muted); margin-top: 24px; }
 .contact .button { margin-top: 30px; min-width: 230px; text-align: left; }
 .contact .external-note { font-size: .75rem; }
+.contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px 32px; margin-top: 28px; }
 .footer { border-top: 1px solid var(--line); padding-block: 38px; display: grid; grid-template-columns: 1fr 2fr auto; gap: 48px; align-items: start; }
 .footer-brand { display: flex; flex-direction: column; gap: 16px; }
 .footer-brand > span:last-child { color: var(--muted); font-size: .7rem; }
@@ -135,14 +140,13 @@ details p { padding: 0 8px 24px; color: var(--muted); font-size: .9rem; }
   .service h3 { margin-top: 22px; }
   .feature-grid, .faq { gap: 40px; }
   .goals a { padding-inline: 16px; font-size: .82rem; gap: 10px; }
-  .journey-steps { gap: 28px; }
   .footer { grid-template-columns: 1fr 2fr; }
 }
 @media (max-width: 700px) {
   .wrap { width: calc(100% - 40px); }
   .header { min-height: 100px; flex-wrap: wrap; padding-block: 22px 16px; gap: 14px; }
   .brand { order: 0; }
-  .wordmark { font-size: 2.4rem; }
+  .brand-logo { width: 110px; }
   .header-cta { order: 1; min-height: 44px; font-size: .74rem; padding: 9px 12px; gap: 12px; }
   nav { order: 2; flex: 0 0 100%; border-block: 1px solid var(--line); justify-content: space-between; gap: 10px; }
   nav a { font-size: .78rem; }
@@ -177,14 +181,14 @@ details p { padding: 0 8px 24px; color: var(--muted); font-size: .9rem; }
   .centre-photos { grid-template-columns: 1fr; gap: 32px; }
   .centre-photos figure:last-child { padding-top: 0; }
   .journey { padding-block: 56px; }
-  .journey-steps { grid-template-columns: 1fr; gap: 28px; }
-  .journey-steps h3 { margin-top: 12px; }
-  .journey-steps p { margin-top: 12px; }
+  .booking-intro { margin-top: 24px; font-size: .86rem; }
+  .booking-grid, .partner-grid { grid-template-columns: 1fr; gap: 20px; }
+  .booking-option { padding: 24px; }
   .faq { grid-template-columns: 1fr; gap: 32px; }
   summary { font-size: .86rem; }
   .contact { padding-block: 56px; }
   .contact > p:not(.eyebrow) { font-size: .87rem; }
   .contact > .external-note { font-size: .73rem; }
   .footer { grid-template-columns: 1fr; gap: 28px; }
-  .footer-brand { flex-direction: row; align-items: center; gap: 24px; }
+  .footer-brand { gap: 16px; }
 }
